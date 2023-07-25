@@ -4,7 +4,8 @@ import tkinter as tk
 import sys
 from PIL import Image, ImageTk
 
-# comando para criar o .EXE = pyinstaller --onefile --icon=C:\Dev\python\TestCover\icons8-slice-48.png screen.py
+# comando para criar o .EXE = pyinstaller --onefile --icon=C:\Dev\Python_study\TestCover\icons8-slice-48.png screen.py
+# "C:\Dev\Python_study\TestCover\icons8-slice-48.png"
 
 caminho_string_1 = "%CD%\source\src\devices\cronos_ng_plus"
 caminho1 = Path(caminho_string_1)
@@ -221,52 +222,52 @@ root.title("Gerador de Relatório de Cobertura")
 button_frame = tk.Frame(root)
 button_frame.pack(pady=30)
 
-button1 = tk.Button(button_frame, text="Cobertura do Cronos NG", command=coverage_test_from_CRONOS_NG)
+button1 = tk.Button(button_frame, text="Cobertura do Cronos NG", command=coverage_test_from_CRONOS_NG, width=40)
 button1.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button2 = tk.Button(button_frame, text="Cobertura do medidor Bulk", command=coverage_test_from_Bulk_Meter)
+button2 = tk.Button(button_frame, text="Cobertura do medidor Bulk", command=coverage_test_from_Bulk_Meter, width=40)
 button2.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button3 = tk.Button(button_frame, text="Cobertura do Religador", command=coverage_test_from_RECLOSER)
+button3 = tk.Button(button_frame, text="Cobertura do Religador", command=coverage_test_from_RECLOSER, width=40)
 button3.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button4 = tk.Button(button_frame, text="Cobertura do medidor de Água", command=coverage_test_from_WATER)
+button4 = tk.Button(button_frame, text="Cobertura do medidor de Água", command=coverage_test_from_WATER, width=40)
 button4.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button5 = tk.Button(button_frame, text="Cobertura do ZEUS NG", command=coverage_test_from_ZEUS_NG)
+button5 = tk.Button(button_frame, text="Cobertura do ZEUS NG", command=coverage_test_from_ZEUS_NG, width=40)
 button5.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button6 = tk.Button(button_frame, text="Cobertura do ZEUS THS", command=coverage_test_from_ZEUS_THS)
+button6 = tk.Button(button_frame, text="Cobertura do ZEUS THS", command=coverage_test_from_ZEUS_THS, width=40)
 button6.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button7 = tk.Button(button_frame, text="Cobertura do ZEUS", command=coverage_test_from_ZEUS)
+button7 = tk.Button(button_frame, text="Cobertura do ZEUS", command=coverage_test_from_ZEUS, width=40)
 button7.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button8 = tk.Button(button_frame, text="Cobertura da Utils", command=coverage_test_from_Utils)
+button8 = tk.Button(button_frame, text="Cobertura da Utils", command=coverage_test_from_Utils, width=40)
 button8.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-button9 = tk.Button(button_frame, text="Cobertura da Lib Modbus", command=coverage_test_lib_mobdus)
+button9 = tk.Button(button_frame, text="Cobertura da Lib Modbus", command=coverage_test_lib_mobdus, width=40)
 button9.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()
 
-buttonclose = tk.Button(button_frame, text="Fechar aplicativo", command=fechar_aplicativo)
+buttonclose = tk.Button(button_frame, text="Fechar aplicativo", command=fechar_aplicativo, width=40)
 buttonclose.pack(anchor="center")
 
 tk.Label(button_frame, text="").pack()

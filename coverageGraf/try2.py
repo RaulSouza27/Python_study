@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 # Dados para o gráfico
 categorias = ['Zeus', 'Zeus THS', 'Zeus NG', 'Recloser','House Water meter','Bulk Water meter','Cronos NG']
 valores_anterior = [48, 36, 23, 79,76,72,65]
-valores_atual = [48, 51, 55, 92,76,100,76]
+valores_atual = [48, 75, 55, 92,76,100,76]
 
 # Configuração das barras
 largura_barra = 0.35  # Largura das barras
