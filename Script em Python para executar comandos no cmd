@@ -1,0 +1,32 @@
+Script em Python para executar comandos no cmd
+
+Sim, é possível executar o OpenCppCoverage a partir de um script Python usando o módulo `subprocess`. O OpenCppCoverage é uma ferramenta que fornece cobertura de código para programas C++.
+
+Aqui está um exemplo de como você pode executar o OpenCppCoverage usando Python:
+
+```python
+import subprocess
+
+# Executar o OpenCppCoverage
+subprocess.call('OpenCppCoverage Comando-aqui', shell=True)
+```
+
+Substitua `'Comando-aqui'` pelo comando específico do OpenCppCoverage que você deseja executar. Por exemplo, se você quiser executar o OpenCppCoverage para cobrir um executável chamado "meu_programa.exe", o comando seria algo como:
+
+```python
+subprocess.call('OpenCppCoverage --sources Diretorio-do-codigo -- meu_programa.exe', shell=True)
+```
+
+Certifique-se de ter o OpenCppCoverage instalado corretamente em seu sistema e de que o executável `OpenCppCoverage` esteja no seu PATH. 
+
+Você também pode capturar a saída do OpenCppCoverage, se necessário:
+
+```python
+import subprocess
+
+# Executar o OpenCppCoverage e capturar a saída
+output = subprocess.check_output('OpenCppCoverage Comando-aqui', shell=True)
+print(output.decode('utf-8'))
+```
+
+Lembre-se de ajustar o comando de acordo com a sintaxe e as opções corretas do OpenCppCoverage que você deseja utilizar.
